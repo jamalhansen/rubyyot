@@ -1,0 +1,6 @@
+[submodule "vendor/gems/rsimpy"]
+	path = vendor/gems/rsimpy
+	url = git://github.com/rubyyot/rsimpy.git
+[submodule "vendor/gems/httparty"]
+	path = vendor/gems/httparty
+	url = git://github.com/jnunemaker/httparty.git
