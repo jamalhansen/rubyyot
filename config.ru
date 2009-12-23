@@ -1,4 +1,4 @@
 require 'rack'
-require 'homepage'
+require 'lib/wikipage'
 
-run Rubyyot::Homepage.new
+run Rubyyot::WikiPage.new        
