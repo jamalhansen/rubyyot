@@ -1,3 +1,6 @@
 [submodule "vendor/gems/grit"]
 	path = vendor/gems/grit
 	url = git://github.com/mojombo/grit.git
+[submodule "vendor/gems/flannel"]
+	path = vendor/gems/flannel
+	url = git://github.com/rubyyot/flannel.git
