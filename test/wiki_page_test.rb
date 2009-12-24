@@ -5,11 +5,19 @@ class WikiPageTest < Test::Unit::TestCase
   context "Returning a response" do
     setup do
       @page = Rubyyot::WikiPage.new
+      @status, @headers, @body = @page.build_response("/foo")
     end
     
     should "have a status of 200" do
-      status, headers, body = @page.build_response("foo")
-      assert_equal(200, status)
+      assert_equal(200, @status)
+    end
+    
+    should "set content type" do
+      assert_equal(@headers["Content-Type"], "text/html")
+    end
+    
+    should "set content length" do
+      assert_equal(@headers["Content-Length"], @body.length.to_s)
     end
   end
 end
