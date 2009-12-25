@@ -23,6 +23,11 @@ class PageBuilderTest < Test::Unit::TestCase
       assert_match("bar bar", out)
     end
     
+    should "flannel content" do
+      out = @builder.build("/header")
+      assert_match("<h2>foo</h2>", out)
+    end
+    
     context "page doesn't exist" do
       should "throw page doesn't exist" do
 	begin

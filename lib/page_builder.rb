@@ -1,5 +1,7 @@
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'grit'))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'grit', 'lib'))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'flannel', 'lib'))
 require 'grit'
+require 'flannel'
 
 module Rubyyot
   class PageBuilder
@@ -10,7 +12,7 @@ module Rubyyot
     
     def build(route)
       data = find(route[1..-1])
-      "#{route} #{data}"
+      "#{route} #{Flannel.quilt(data)}"
     end
     
     def find(name)
