@@ -5,8 +5,8 @@ require 'flannel'
 
 module Rubyyot
   class PageBuilder
-    def initialize
-      @repo_path = "~/working/rubyyot-wiki-test"
+    def initialize(repo_path)
+      @repo_path = repo_path
       @repository = Grit::Repo.new(@repo_path)
     end
     

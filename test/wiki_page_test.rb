@@ -20,4 +20,15 @@ class WikiPageTest < Test::Unit::TestCase
       assert_equal(@headers["Content-Length"], @body.length.to_s)
     end
   end
+  
+  context "PageNotFound" do
+    setup do
+      @page = Rubyyot::WikiPage.new
+      @status, @headers, @body = @page.build_response("/pagenotfound")
+    end
+    
+    should "have a status of 404" do
+      assert_equal(404, @status)
+    end
+  end
 end
