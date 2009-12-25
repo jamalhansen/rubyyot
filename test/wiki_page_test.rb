@@ -4,7 +4,7 @@ require 'lib/wiki_page'
 class WikiPageTest < Test::Unit::TestCase
   context "Returning a response" do
     setup do
-      @page = Rubyyot::WikiPage.new
+      @page = Rubyyot::WikiPage.new("~/working/rubyyot-wiki-test")
       @status, @headers, @body = @page.build_response("/foo")
     end
     
@@ -23,7 +23,7 @@ class WikiPageTest < Test::Unit::TestCase
   
   context "PageNotFound" do
     setup do
-      @page = Rubyyot::WikiPage.new
+      @page = Rubyyot::WikiPage.new("~/working/rubyyot-wiki-test")
       @status, @headers, @body = @page.build_response("/pagenotfound")
     end
     

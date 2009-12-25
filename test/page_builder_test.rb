@@ -5,7 +5,7 @@ require 'lib/page_not_found'
 class PageBuilderTest < Test::Unit::TestCase
   context "Building a Page" do
     setup do
-      @builder = Rubyyot::PageBuilder.new
+      @builder = Rubyyot::PageBuilder.new("~/working/rubyyot-wiki-test")
     end
     
     should "include the location" do

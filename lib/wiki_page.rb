@@ -15,7 +15,7 @@ module Rubyyot
     def build_response(path)
       path = "/home" if path == "/"
       builder = Rubyyot::PageBuilder.new(@repo_path)
-      
+            
       begin
 	response_body = builder.build(path)
 	status = 200
