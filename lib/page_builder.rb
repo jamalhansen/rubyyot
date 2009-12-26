@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'grit', 'lib'))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'flannel', 'lib'))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'diff-lcs', 'lib'))
-
+require 'diff/lcs'
 require 'grit'
 require 'flannel'
 
