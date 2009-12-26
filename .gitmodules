@@ -4,3 +4,6 @@
 [submodule "vendor/gems/flannel"]
 	path = vendor/gems/flannel
 	url = git://github.com/rubyyot/flannel.git
+[submodule "vendor/gems/diff-lcs"]
+	path = vendor/gems/diff-lcs
+	url = git://github.com/defunkt/diff-lcs.git
