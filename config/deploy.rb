@@ -7,7 +7,7 @@ set :application, 'rubyyot.com'
 
 # the rest should be good
 set :repository,  "git://github.com/rubyyot/rubyyot.git" 
-set :deploy_to, "/home/#{user}/#{domain}" 
+set :deploy_to, "/home/#{user}/apps/#{domain}" 
 set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
