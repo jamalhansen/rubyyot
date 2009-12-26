@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'fl
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'diff-lcs', 'lib'))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'mime-types', 'lib'))
 
-#require 'diff/lcs'
+require 'mime/types'
 require 'grit'
 require 'flannel'
 
