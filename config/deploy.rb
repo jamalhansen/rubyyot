@@ -3,7 +3,7 @@ default_run_options[:pty] = true
 # be sure to change these
 set :user, 'rubyyotc'
 set :domain, 'rubyyot.com'
-set :application, 'rubyyot.com'
+set :application, 'rubyyot'
 
 # the rest should be good
 set :repository,  "git://github.com/rubyyot/rubyyot.git" 
