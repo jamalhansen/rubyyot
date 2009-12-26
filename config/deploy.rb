@@ -14,6 +14,7 @@ set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true
 set :use_sudo, false
+set :git_enable_submodules,1
 
 server domain, :app, :web
 role :db, domain, :primary => true
