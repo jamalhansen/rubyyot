@@ -7,3 +7,6 @@
 [submodule "vendor/gems/diff-lcs"]
 	path = vendor/gems/diff-lcs
 	url = git://github.com/defunkt/diff-lcs.git
+[submodule "vendor/gems/mime-types"]
+	path = vendor/gems/mime-types
+	url = git://github.com/halostatue/mime-types.git
