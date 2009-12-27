@@ -1,5 +1,5 @@
 require 'test_helper'
-require 'lib/wiki_page'
+require 'lib/wiki/wiki_page'
 
 class WikiPageTest < Test::Unit::TestCase
   context "Returning a response" do
@@ -16,8 +16,8 @@ class WikiPageTest < Test::Unit::TestCase
       assert_equal(@headers["Content-Type"], "text/html")
     end
     
-    should "set content length" do
-      assert_equal(@headers["Content-Length"], @body.length.to_s)
+    should "set content language" do
+      assert_equal(@headers["Content-Language"], 'en')
     end
   end
   

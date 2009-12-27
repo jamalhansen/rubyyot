@@ -1,5 +1,5 @@
 require 'test_helper'
-require 'lib/page_builder'
+require 'lib/wiki/page_builder'
 require 'lib/page_not_found'
 
 class PageBuilderTest < Test::Unit::TestCase
