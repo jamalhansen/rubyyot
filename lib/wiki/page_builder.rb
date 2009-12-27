@@ -6,6 +6,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', '..', 'vendor', 'gems
 require 'mime/types'
 require 'grit'
 require 'flannel'
+require 'erb'
 
 module Rubyyot
   class PageBuilder
@@ -28,17 +29,9 @@ module Rubyyot
     end
     
     def wrap_in_layout(content, route_name)
-      %Q{<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-      <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-      <head>
-      <title>
-      Rubyyot.com - #{route_name}
-      </title>
-      </head>
-      <body>
-      #{content}
-      </body>
-      </html>}
+      file = File.read("template.html.erb")
+      post_template = ERB.new(file, 0, "%<>")
+      post_template.result binding
     end
   end
 end
