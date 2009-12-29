@@ -1,4 +1,5 @@
 require 'rack'
+require 'lib/google_analytics'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'wiki/wiki_page'
@@ -14,5 +15,6 @@ repo_path = set_repo_path
 use Rack::CommonLogger
 use Rack::ContentLength
 use Rack::Static, :urls => ["/favicon.ico"]
+use Rack::GoogleAnalytics, 'UA-5919945-1'
 run Rubyyot::WikiPage.new(repo_path)       
 
