@@ -14,7 +14,7 @@ repo_path = set_repo_path
 
 use Rack::CommonLogger
 use Rack::ContentLength
-use Rack::Static, :urls => ["/favicon.ico"]
+use Rack::Static, :urls => ["/favicon.ico", "/css/*"]
 use Rack::GoogleAnalytics, 'UA-5919945-1'
 run Rubyyot::WikiPage.new(repo_path)       
 
