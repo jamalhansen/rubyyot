@@ -2,11 +2,17 @@
 /* in reset.css */
 
 /*****Basic Elements*****/  
-body {font-size: large;}
+body {
+  font-family: Verdana;
+  font-size: large;
+}
+
 h1, h2, h3 {
+  color: #bbb;
   font-family: arial, geneva, helvetica;
   font-size: x-large;
   font-weight: bold;
+  
 }  
  
   
