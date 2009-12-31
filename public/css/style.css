@@ -11,15 +11,6 @@ body {
   vertical-align: middle
 }
 
-h1, h2, h3 {
-  color: #bbb;
-  font-family: arial, geneva, helvetica;
-  font-size: x-large;
-  font-weight: bold;
-  
-}  
-
-  
 /*****Generic Classes*****/  
  
 
@@ -31,7 +22,17 @@ h1, h2, h3 {
 }
 
 /*****Header*****/  
+h1, h2, h3 {
+  color: #bbb;
+  font-family: arial, geneva, helvetica;
+  font-size: x-large;
+  font-weight: bold;
+  
+}  
 
+#location {
+  text-align: right; 
+}
   
 /*****Content*****/  
 
