@@ -2,7 +2,10 @@
 /* in reset.css */
 
 /*****Basic Elements*****/  
-h1, h2, h3 {font-family: helvitica, sans}  
+body {font-size: large;}
+h1, h2, h3 {
+  font-family: arial, geneva, helvetica;
+}  
  
   
 /*****Generic Classes*****/  
