@@ -5,6 +5,7 @@
 body {
   font-family: Verdana;
   font-size: large;
+  line-height: 2;
 }
 
 h1, h2, h3 {
