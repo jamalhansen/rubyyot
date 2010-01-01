@@ -11,6 +11,10 @@ body {
   vertical-align: middle
 }
 
+p {
+  margin: 2em 0 0 0;
+}
+
 /*****Generic Classes*****/  
  
 
@@ -24,11 +28,10 @@ body {
 /*****Header*****/  
 h1, h2, h3 {
   color: #bbb;
-  line-height: 2;
+  margin: 3em 0 0 0;
   font-family: arial, geneva, helvetica;
   font-size: x-large;
   font-weight: bold;
-  
 }  
 
 #location {
