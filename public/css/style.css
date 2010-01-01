@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  margin: 2em 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 /*****Generic Classes*****/  
@@ -28,7 +28,7 @@ p {
 /*****Header*****/  
 h1, h2, h3 {
   color: #bbb;
-  margin: 3em 0 0 0;
+  margin: 2em 0 0 0;
   font-family: arial, geneva, helvetica;
   font-size: x-large;
   font-weight: bold;
