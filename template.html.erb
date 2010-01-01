@@ -39,7 +39,8 @@ Rubyyot.com - <%= route_name %>
     <script type="text/javascript" src="http://rubyyot.com/javascript/jquery-svn.js"></script> 
     <script type="text/javascript" src="http://rubyyot.com/javascript/jquery.corner.js"></script> 
     <script type="text/javascript"> 
-      $("pre").corner("10px");
+      $("pre").corner("10px");          // curved corners
+      $("a[href=^http://").attr("target", "_blank");       // non wiki links in new tab
     </script> 
     </div>
   </div>
