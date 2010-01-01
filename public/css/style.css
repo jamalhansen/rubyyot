@@ -5,7 +5,7 @@
 body {
   font-family: Verdana;
   font-size: large;
-  line-height: 2;
+  line-height: 1.5;
   margin: 5em 0 0 0;
   text-align: center; 
   vertical-align: middle
@@ -24,6 +24,7 @@ body {
 /*****Header*****/  
 h1, h2, h3 {
   color: #bbb;
+  line-height: 2;
   font-family: arial, geneva, helvetica;
   font-size: x-large;
   font-weight: bold;
