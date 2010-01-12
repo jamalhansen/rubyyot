@@ -10,3 +10,6 @@
 [submodule "vendor/gems/mime-types"]
 	path = vendor/gems/mime-types
 	url = git://github.com/halostatue/mime-types.git
+[submodule "vendor/gems/wonki"]
+	path = vendor/gems/wonki
+	url = git://github.com/rubyyot/wonki.git
