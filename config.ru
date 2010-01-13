@@ -25,6 +25,6 @@ use Rack::ContentLength
 use Rack::Static, :urls => ["/favicon.ico", "/css/*", "/javascript/*"]
 use Rack::Disqus, 'rubyyot'
 use Rack::GoogleAnalytics, 'UA-5919945-1'
-use Rack::Layout, 'UA-5919945-1'
+use Rack::Layout
 run Wonki::WikiPage.new("~/git/rubyyot-wiki.git")       
 

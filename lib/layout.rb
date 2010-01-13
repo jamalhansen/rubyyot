@@ -1,4 +1,3 @@
-# adapted from: http://coderack.org/users/sam/entries/21-rackgoogleanalytics
 
 module Rack
   class Layout
@@ -16,7 +15,7 @@ Rubyyot.com
 </head>
 <body>
 
-<div id="trunk">
+  <div id="trunk">
 EOCODE
  
    BOTTOM = <<-EOCODE
@@ -31,9 +30,8 @@ EOCODE
 </html> 
 EOCODE
     
-    def initialize(*args)
-      @app = args[0]
-      @id = args[1]
+    def initialize(app)
+      @app = app
     end
     
     def call(env)
@@ -43,10 +41,4 @@ EOCODE
 	  
       [status, headers, body]
     end
-  
-  private
-    def tracking_code
-      TRACKING_CODE.sub(/\{\{ID\}\}/, @id)
-    end
-  end
 end
