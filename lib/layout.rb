@@ -41,4 +41,5 @@ EOCODE
 	  
       [status, headers, body]
     end
+  end
 end
