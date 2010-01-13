@@ -13,3 +13,6 @@
 [submodule "vendor/gems/wonki"]
 	path = vendor/gems/wonki
 	url = git://github.com/rubyyot/wonki.git
+[submodule "vendor/gems/rack-cache"]
+	path = vendor/gems/rack-cache
+	url = git://github.com/rtomayko/rack-cache.git
