@@ -8,7 +8,7 @@ set :application, 'rubyyot'
 # the rest should be good
 set :repository,  "git://github.com/rubyyot/rubyyot.git" 
 set :deploy_to, "/home/#{user}/apps/#{application}" 
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
 set :git_shallow_clone, 1
